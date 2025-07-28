@@ -1,0 +1,72 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #6366f1, #818cf8);
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.toggle-theme {
+  background: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #6366f1;
+  transition: background 0.2s ease-in-out;
+}
+
+.toggle-theme:hover {
+  background: #e0e7ff;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f5f7fa;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eef2ff;
+  font-size: 0.875rem;
+  color: #6b7280;
+  border-top: 1px solid #d1d5db;
+}
+
+.dark-mode {
+  background-color: #1e1e2f;
+  color: #f9fafb;
+}
+
+.dark-mode .app-header {
+  background: linear-gradient(to right, #4f46e5, #4338ca);
+}
+
+.dark-mode main {
+  background-color: #2d2d44;
+}
+
+.dark-mode footer {
+  background-color: #3f3f5a;
+  color: #d1d5db;
+}
